@@ -18,5 +18,13 @@ class Solution:
                     op1 = int(stack.pop())
                     res = op1 * op2
                     stack.append(str(res))
+                case '/':
+                    op2 = int(stack.pop())
+                    op1 = int(stack.pop())
+                    res = op1 / op2
+                    stack.append(str(res))
+                case _:
+                    stack.append(element)
+            return int(stack.pop())
 
-DO IT AGAIN
+DO IT AGAIN.....!!!
